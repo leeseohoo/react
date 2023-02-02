@@ -18,8 +18,8 @@ function App() {
         <Footer/>
         <BrowserRouter>
           <Routes>
-            <Route path="Section1" element={<Section1 />} />
-            <Route path="Section2" element={<Section2 />} />
+            <Route path="/Section1" element={<Section1 />} />
+            <Route path="/Section2" element={<Section2 />} />
           </Routes>
         </BrowserRouter>
     </div>
