@@ -10,7 +10,7 @@ const Section1 = () => {
             </div>
             <img className="main" src={main} width="600px" alt="main"/>
             <div className="main-introduction">
-                <p className="title"><h3>불법외국어선 단속강화</h3></p>
+                <div className="title"><h3>불법외국어선 단속강화</h3></div>
                 <h4>해경특수기동대원 원격 생체신호 모니터링 시스템</h4>
             </div>
             <h3 className="back">Scroll down🙋‍♀️</h3>

@@ -1,23 +1,16 @@
 import React from "react";
 import "./App.css";
-import Nav from "./Components/nav/Nav";
 import Section1 from "./Components/section1/Section1";
 import Section2 from "./Components/section2/Section2";
-import Footer from "./Components/footer/Footer";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Home from "./Components/Home";
 
 function App() {
   return (
     <div>
-        <Nav>
-          <Link to="/Section1">ABOUT</Link> |{" "}
-          <Link to="/Section2">MEMBER</Link>
-        </Nav>
-        <Section1/>
-        <Section2/>
-        <Footer/>
         <BrowserRouter>
           <Routes>
+            <Route path={"/"} element={<Home />} />
             <Route path="/Section1" element={<Section1 />} />
             <Route path="/Section2" element={<Section2 />} />
           </Routes>
