@@ -4,15 +4,12 @@ import Nav from "./Components/nav/Nav";
 import Section1 from "./Components/section1/Section1";
 import Section2 from "./Components/section2/Section2";
 import Footer from "./Components/footer/Footer";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-        <Nav>
-          <Link to="/Section1">ABOUT</Link> |{" "}
-          <Link to="/Section2">MEMBER</Link>
-        </Nav>
+        <Nav/>
         <Section1/>
         <Section2/>
         <Footer/>
